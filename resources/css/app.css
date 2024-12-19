@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Lexend Deca', 'Onest', sans-serif;
+    }
+}
+
+@layer utilities {
+    .link {
+        @apply relative before:content-[''] before:absolute before:-bottom-0.5 before:left-0 before:h-0.5 before:w-full before:bg-slate-200 before:scale-x-0 before:origin-right before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100;
+    }
+
+    .link-active {
+        @apply before:scale-x-100 before:opacity-70;
+    }
+}
