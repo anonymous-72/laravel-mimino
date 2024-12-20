@@ -19,6 +19,7 @@ export default {
             },
             backgroundImage: {
                 'custom-gradient': 'linear-gradient(150deg, rgba(255,76,76,1) 0%, rgba(254,125,125,1) 50%, rgba(255,175,175,1) 100%)',
+                'custom-gradient-reverse': 'linear-gradient(150deg, rgba(255,175,175,1) 0%, rgba(254,125,125,1) 50%, rgba(255,76,76,1) 100%)',
             },
         },
     },
