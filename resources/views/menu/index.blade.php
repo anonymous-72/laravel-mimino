@@ -18,7 +18,14 @@
             title="{{ $category->categoryTranslations->first()->name }}"
         >
             @foreach ($category->dishes as $dish)
-                <span>{{ $dish->slug }}</span>
+                @if ($dish->image === null)
+                    <div>{{ $dish->dishTranslations->first()->name }}</div>
+                @else
+                    <div>
+                        <img src="{{ asset('dishes/' . $category->slug . '/' . $dish->image) }}" alt="{{ $dish->slug }}">
+                        <span>{{ $dish->dishTranslations->first()->name }}</span>
+                    </div>
+                @endif
             @endforeach
         </x-category-section>
     @endforeach

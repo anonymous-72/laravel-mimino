@@ -12,9 +12,11 @@ class MenuController extends Controller
     {
         $categories = Category::with([
             'categoryTranslations' => function ($query) {
-            $query->where('locale', app()->getLocale());
+                $query->where('locale', app()->getLocale());
             },
-            'dishes'
+            'dishes.dishTranslations' => function ($query) {
+                $query->where('locale', app()->getLocale());
+            }
         ])->get();
         return view('menu.index', ['categories' => $categories]);
     }
