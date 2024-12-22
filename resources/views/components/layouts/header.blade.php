@@ -1,4 +1,4 @@
-<header class="fixed top-0 left-0 w-full bg-red px-6 md:px-12 lg:px-18">
+<header class="fixed top-0 left-0 w-full z-50 bg-red px-6 md:px-12 lg:px-18">
     <nav class="flex justify-between items-center">
         <a href="{{ route('home') }}">
             <img src="{{ asset('logo-light.png') }}" alt="Logo" class="w-20 h-20">

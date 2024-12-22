@@ -10,5 +10,6 @@ return [
     'address' => 'Arborilor 21 Street, Shopping MallDova - 4th floor',
     'menu-subtitle' => 'Immerse yourself in the world of Georgian traditions and enjoy the flavors of our menu',
     'about-subtitle' => 'Learn our history and feel the warmth of Georgian hospitality',
-    'reservation-subtitle' => 'Book a table and plunge into the atmosphere of Georgian coziness'
+    'reservation-subtitle' => 'Book a table and plunge into the atmosphere of Georgian coziness',
+    'new' => 'New'
 ];
