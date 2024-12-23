@@ -46,6 +46,27 @@
         </x-category-section>
     @endforeach
 
+    <button
+        id="scrollToTop"
+        class="fixed bottom-8 right-8 bg-red hover:bg-red-600 text-white rounded-full p-4 shadow-lg transition-all duration-300 ease-in-out translate-y-28 opacity-0 hover:shadow-2xl"
+        aria-label="Scroll to top"
+    >
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 10l7-7m0 0l7 7m-7-7v18"
+            />
+        </svg>
+    </button>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const categoryLinks = document.querySelectorAll('.category-link');
@@ -60,6 +81,25 @@
                     if (targetElement) {
                         targetElement.scrollIntoView({ behavior: 'smooth' });
                     }
+                });
+            });
+
+            const scrollToTopButton = document.getElementById('scrollToTop');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopButton.classList.remove('translate-y-28', 'opacity-0');
+                    scrollToTopButton.classList.add('translate-y-0', 'opacity-100');
+                } else {
+                    scrollToTopButton.classList.add('translate-y-28', 'opacity-0');
+                    scrollToTopButton.classList.remove('translate-y-0', 'opacity-100');
+                }
+            });
+
+            scrollToTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
                 });
             });
 

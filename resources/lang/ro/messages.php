@@ -11,6 +11,9 @@ return [
     'menu-subtitle' => 'Imersați-vă în lumea tradițiilor georgiene și bucurați-vă de aromele meniului nostru',
     'about-subtitle' => 'Aflați istoria noastră și simțiți căldura ospitalității georgiene',
     'reservation-subtitle' => 'Rezervați o masă și cufundați-vă în atmosfera de confort georgian',
-    'new' => 'Nou'
+    'new' => 'Nou',
+    'general-information' => 'Informații generale',
+    'working-hours' => 'Luni-Duminică: 10:00-22:00',
+    'social-media' => 'Rețele sociale',
 ];
 

@@ -37,7 +37,7 @@
 </div>
 
 <div id="modal-{{ $dish_slug }}" class="fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-center items-center opacity-0 pointer-events-none transition-opacity duration-500 ease-out" onclick="closeModal('{{ $dish_slug }}', event)">
-    <div class="bg-black p-8 rounded-lg max-w-4xl w-full opacity-0 transform scale-95 transition-all duration-500 ease-out flex flex-col md:flex-row items-center md:items-start" onclick="event.stopPropagation()">
+    <div class="bg-[#101010] border-2 border-red p-8 rounded-xl max-w-4xl w-full opacity-0 transform scale-95 transition-all duration-500 ease-out flex flex-col md:flex-row items-center md:items-start" onclick="event.stopPropagation()">
         <div class="w-full md:w-1/2 mb-6 md:mb-0">
             <img src="{{ asset('dishes/' . $category_slug . '/' . $image) }}" alt="{{ $name }}" class="w-full h-auto rounded-lg">
         </div>

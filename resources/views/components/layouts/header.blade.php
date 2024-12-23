@@ -44,10 +44,10 @@
             </div>
         </div>
         <ul class="hidden md:flex gap-10 py-8">
-            <li><a href="{{ route('home') }}" class="text-white font-semibold text-lg transition-colors duration-200 hover:text-opacity-80 {{ Route::currentRouteName() === 'home' ? 'underline' : '' }}">{{ __('messages.home') }}</a></li>
-            <li><a href="{{ route('about') }}" class="text-white font-semibold text-lg transition-colors duration-200 hover:text-opacity-80 {{ Route::currentRouteName() === 'about' ? 'underline' : '' }}">{{ __('messages.about') }}</a></li>
-            <li><a href="{{ route('menu') }}" class="text-white font-semibold text-lg transition-colors duration-200 hover:text-opacity-80 {{ Route::currentRouteName() === 'menu' ? 'underline' : '' }}">{{ __('messages.menu') }}</a></li>
-            <li><a href="{{ route('reservation') }}" class="text-white font-semibold text-lg transition-colors duration-200 hover:text-opacity-80 {{ Route::currentRouteName() === 'reservation' ? 'underline' : '' }}">{{ __('messages.reservation') }}</a></li>
+            <li><a href="{{ route('home') }}" class="text-white font-semibold text-lg link {{ Route::currentRouteName() === 'home' ? 'link-active' : '' }}">{{ __('messages.home') }}</a></li>
+            <li><a href="{{ route('about') }}" class="text-white font-semibold text-lg link {{ Route::currentRouteName() === 'about' ? 'link-active' : '' }}">{{ __('messages.about') }}</a></li>
+            <li><a href="{{ route('menu') }}" class="text-white font-semibold text-lg link {{ Route::currentRouteName() === 'menu' ? 'link-active' : '' }}">{{ __('messages.menu') }}</a></li>
+            <li><a href="{{ route('reservation') }}" class="text-white font-semibold text-lg link {{ Route::currentRouteName() === 'reservation' ? 'link-active' : '' }}">{{ __('messages.reservation') }}</a></li>
         </ul>
         <div class="hidden md:flex gap-3 py-8">
             <x-language-link

@@ -15,8 +15,7 @@
     <title>{{ config('app.name') }} | {{ $title }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-black text-white">
-<x-layouts.header />
+<body class="bg-black text-white h-screen flex flex-col justify-between">
 {{ $slot }}
 </body>
 </html>
