@@ -27,4 +27,11 @@ return [
     'reservation-pending-message' => 'Ваш запрос на бронирование был получен!',
     'reservation-confirmation-description' => 'Зайдите на Вашу электронную почту, чтобы посмотреть всю информацию о бронировании.',
     'back-to-home' => 'Вернуться на главную',
+    'reservation-confirmation' => 'Подтверждение бронирования',
+    'reservation-confirmation-subject' => 'Ваше подтверждение бронирования',
+    'dear' => 'Уважаемый/Уважаемая',
+    'reservation-confirmation-thank-you' => 'Спасибо за Ваше бронирование. Мы получили Ваше бронирование и с нетерпением ждем встречи с Вами.',
+    'reservation-confirmation-contact' => 'Если Вам нужно внести изменения в бронирование или у Вас есть вопросы, пожалуйста, не стесняйтесь связаться с нами.',
+    'visit-our-website' => 'Посетите наш сайт',
+    'all-rights-reserved' => 'Все права защищены',
 ];

@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ReservationRequest;
+use App\Mail\ReservationConfirmation;
 use App\Models\Reservation;
 use App\Models\Table;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ReservationController extends Controller
 {
@@ -32,13 +34,15 @@ class ReservationController extends Controller
     {
         $validated = $request->validated();
 
-        Reservation::create([
+        $reservation = Reservation::create([
             'name' => $validated['name'],
             'email' => $validated['email'],
             'phone_number' => $validated['phone_number'],
             'reservation_date' => $validated['reservation_date'],
             'comment' => $validated['comment'] ?? null,
         ]);
+
+        Mail::to($reservation->email)->send(new ReservationConfirmation($reservation));
 
         return redirect()->route('reservation.pending');
     }

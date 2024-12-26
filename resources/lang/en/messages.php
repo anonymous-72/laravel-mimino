@@ -27,4 +27,11 @@ return [
     'reservation-pending-message' => 'Your reservation request has been received!',
     'reservation-confirmation-description' => 'Visit your email to see all your reservation information.',
     'back-to-home' => 'Back to home',
+    'reservation-confirmation' => 'Reservation Confirmation',
+    'reservation-confirmation-subject' => 'Your Reservation Confirmation',
+    'dear' => 'Dear',
+    'reservation-confirmation-thank-you' => 'Thank you for your reservation. We have received your booking and are looking forward to welcoming you.',
+    'reservation-confirmation-contact' => 'If you need to make any changes to your reservation or have any questions, please don\'t hesitate to contact us.',
+    'visit-our-website' => 'Visit Our Website',
+    'all-rights-reserved' => 'All rights reserved.',
 ];

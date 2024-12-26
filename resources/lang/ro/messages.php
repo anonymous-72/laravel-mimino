@@ -27,5 +27,12 @@ return [
     'reservation-pending-message' => 'Cererea dvs. de rezervare a fost primită!',
     'reservation-confirmation-description' => 'Accesați e-mailul dvs. pentru a vedea toate informațiile despre rezervare.',
     'back-to-home' => 'Înapoi acasă',
+    'reservation-confirmation' => 'Confirmarea rezervării',
+    'reservation-confirmation-subject' => 'Confirmarea rezervării',
+    'dear' => 'Drag/Dragă',
+    'reservation-confirmation-thank-you' => 'Vă mulțumim pentru rezervare. Am primit rezervarea dvs. și așteptăm cu nerăbdare să vă întâmpinăm.',
+    'reservation-confirmation-contact' => 'Dacă aveți nevoie să modificați rezervarea sau dacă aveți întrebări, vă rugăm să nu ezitați să ne contactați.',
+    'visit-our-website' => 'Vizitați site-ul nostru',
+    'all-rights-reserved' => 'Toate drepturile rezervate.',
 ];
 
