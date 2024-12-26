@@ -15,5 +15,18 @@ return [
     'general-information' => 'Informații generale',
     'working-hours' => 'Luni-Duminică: 10:00-22:00',
     'social-media' => 'Rețele sociale',
+    'choose-table' => 'Alegeți o masă',
+    'non-available-tables' => 'Din păcate, toate mesele sunt ocupate în acest moment',
+    'table' => 'Masă',
+    'seats' => 'persoane',
+    'your-name' => 'Numele dvs.',
+    'your-name-placeholder' => 'Ion',
+    'email' => 'E-mail',
+    'phone-number' => 'Număr de telefon',
+    'phone-number-placeholder' => '0 (6X sau 7X) XXXXXX',
+    'date-and-time-of-reservation' => 'Data și ora rezervării',
+    'reservation-comment' => 'Comentariu de rezervare',
+    'reservation-comment-placeholder' => 'Aș dori să....',
+    'make-reservation' => 'Rezervă o masă',
 ];
 

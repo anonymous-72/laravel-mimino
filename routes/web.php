@@ -12,7 +12,8 @@ Route::middleware([SetLocale::class])->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('/about', [AboutController::class, 'index'])->name('about');
     Route::get('/menu', [MenuController::class, 'index'])->name('menu');
-    Route::get('/reservation', [ReservationController::class, 'index'])->name('reservation');
+    Route::get('/reservation/create', [ReservationController::class, 'create'])->name('reservation.create');
+    Route::post('/reservation', [ReservationController::class, 'store'])->name('reservation.store');
 
     Route::get('/change-language/{lang}', function ($lang) {
         session(['locale' => $lang]);
