@@ -12,7 +12,6 @@
             <select
                 id="table_id"
                 name="table_id"
-                required
                 class="bg-[#101010] w-full px-4 py-2 text-sm md:text-base rounded-xl border border-gray-300 focus:border-red focus:ring-red focus:ring-2 focus:outline-none transition-all duration-300 ease-in-out"
             >
                 <option value="" disabled selected>{{ __('messages.choose-table') }}</option>
@@ -41,7 +40,6 @@
                     type="text"
                     id="name"
                     name="name"
-                    required
                     class="bg-[#101010] w-full px-4 py-2 text-sm md:text-base rounded-xl border border-gray-300 focus:border-red focus:ring-red focus:ring-2 focus:outline-none transition-all duration-300 ease-in-out"
                     placeholder="{{ __('messages.your-name-placeholder') }}"
                 >
@@ -60,7 +58,6 @@
                     type="email"
                     id="email"
                     name="email"
-                    required
                     class="bg-[#101010] w-full px-4 py-2 text-sm md:text-base rounded-xl border border-gray-300 focus:border-red focus:ring-red focus:ring-2 focus:outline-none transition-all duration-300 ease-in-out"
                     placeholder="john.doe@gmail.com"
                 >
@@ -81,7 +78,6 @@
                     type="text"
                     id="phone_number"
                     name="phone_number"
-                    required
                     class="bg-[#101010] w-full px-4 py-2 text-sm md:text-base rounded-xl border border-gray-300 focus:border-red focus:ring-red focus:ring-2 focus:outline-none transition-all duration-300 ease-in-out"
                     placeholder="{{ __('messages.phone-number-placeholder') }}"
                 >
@@ -100,7 +96,6 @@
                     type="datetime-local"
                     id="reservation_date"
                     name="reservation_date"
-                    required
                     class="bg-[#101010] w-full px-4 py-2 text-sm md:text-base rounded-xl border border-gray-300 focus:border-red focus:ring-red focus:ring-2 focus:outline-none transition-all duration-300 ease-in-out"
                 >
                 @error('reservation_date')
