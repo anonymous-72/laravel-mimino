@@ -2,9 +2,6 @@
 
 return [
     'custom' => [
-        'table_id' => [
-            'required' => 'Selectați o masă pentru a face o rezervare.'
-        ],
         'name' => [
             'required' => 'Introduceți numele dvs.',
             'max' => 'Numele nu trebuie să fie mai lung de :max caractere.',
@@ -24,7 +21,6 @@ return [
     ],
 
     'attributes' => [
-        'table_id',
         'name',
         'email',
         'phone_number',

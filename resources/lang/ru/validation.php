@@ -2,9 +2,6 @@
 
 return [
     'custom' => [
-        'table_id' => [
-            'required' => 'Выберите столик для бронирования.'
-        ],
         'name' => [
             'required' => 'Введите ваше имя.',
             'max' => 'Имя не должно быть длиннее :max символов.',
@@ -24,7 +21,6 @@ return [
     ],
 
     'attributes' => [
-        'table_id',
         'name',
         'email',
         'phone_number',

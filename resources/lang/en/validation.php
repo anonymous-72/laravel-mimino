@@ -2,9 +2,6 @@
 
 return [
     'custom' => [
-        'table_id' => [
-            'required' => 'Select a table to make a reservation.'
-        ],
         'name' => [
             'required' => 'Enter your name.',
             'max' => 'The name must not be longer than :max characters.',
@@ -24,7 +21,6 @@ return [
     ],
 
     'attributes' => [
-        'table_id',
         'name',
         'email',
         'phone_number',

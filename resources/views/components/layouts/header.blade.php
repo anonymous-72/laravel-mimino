@@ -16,7 +16,7 @@
                     <li><a href="{{ route('home') }}" class="text-white font-semibold text-xl transition-colors duration-200 hover:text-opacity-80 {{ Route::currentRouteName() === 'home' ? 'underline' : '' }}">{{ __('messages.home') }}</a></li>
                     <li><a href="{{ route('about') }}" class="text-white font-semibold text-xl transition-colors duration-200 hover:text-opacity-80 {{ Route::currentRouteName() === 'about' ? 'underline' : '' }}">{{ __('messages.about') }}</a></li>
                     <li><a href="{{ route('menu') }}" class="text-white font-semibold text-xl transition-colors duration-200 hover:text-opacity-80 {{ Route::currentRouteName() === 'menu' ? 'underline' : '' }}">{{ __('messages.menu') }}</a></li>
-                    <li><a href="{{ route('reservation.create') }}" class="text-white font-semibold text-xl transition-colors duration-200 hover:text-opacity-80 {{ Route::currentRouteName() === 'reservation/create' ? 'underline' : '' }}">{{ __('messages.reservation') }}</a></li>
+                    <li><a href="{{ route('reservation.create') }}" class="text-white font-semibold text-xl transition-colors duration-200 hover:text-opacity-80 {{ Route::currentRouteName() === 'reservation.create' ? 'underline' : '' }}">{{ __('messages.reservation') }}</a></li>
                 </ul>
                 <div class="flex gap-6 mt-12">
                     <x-language-link
@@ -47,7 +47,7 @@
             <li><a href="{{ route('home') }}" class="text-white font-semibold text-lg link {{ Route::currentRouteName() === 'home' ? 'link-active' : '' }}">{{ __('messages.home') }}</a></li>
             <li><a href="{{ route('about') }}" class="text-white font-semibold text-lg link {{ Route::currentRouteName() === 'about' ? 'link-active' : '' }}">{{ __('messages.about') }}</a></li>
             <li><a href="{{ route('menu') }}" class="text-white font-semibold text-lg link {{ Route::currentRouteName() === 'menu' ? 'link-active' : '' }}">{{ __('messages.menu') }}</a></li>
-            <li><a href="{{ route('reservation.create') }}" class="text-white font-semibold text-lg link {{ Route::currentRouteName() === 'reservation/create' ? 'link-active' : '' }}">{{ __('messages.reservation') }}</a></li>
+            <li><a href="{{ route('reservation.create') }}" class="text-white font-semibold text-lg link {{ Route::currentRouteName() === 'reservation.create' ? 'link-active' : '' }}">{{ __('messages.reservation') }}</a></li>
         </ul>
         <div class="hidden md:flex gap-3 py-8">
             <x-language-link

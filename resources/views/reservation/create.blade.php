@@ -5,32 +5,6 @@
     />
     <form action="{{ route('reservation.store') }}" method="POST" class="max-w-2xl mx-auto p-6 space-y-10 rounded-xl shadow-lg">
         @csrf
-        <div class="space-y-2">
-            <label for="table_id" class="block text-sm md:text-base lg:text-lg font-medium">
-                {{ __('messages.choose-table') }}
-            </label>
-            <select
-                id="table_id"
-                name="table_id"
-                class="bg-[#101010] w-full px-4 py-2 text-sm md:text-base rounded-xl border border-gray-300 focus:border-red focus:ring-red focus:ring-2 focus:outline-none transition-all duration-300 ease-in-out"
-            >
-                <option value="" disabled selected>{{ __('messages.choose-table') }}</option>
-                @if ($availableTables->count() === 0)
-                    <option value="" disabled selected>{{ __('message.non-available-tables') }}</option>
-                @endif
-                @foreach ($availableTables as $table)
-                    <option value="{{ $table->id }}">
-                        {{ __('messages.table') }} №{{ $table->number }} ({{ $table->seats }} {{ __('messages.seats') }})
-                    </option>
-                @endforeach
-            </select>
-            @error('table_id')
-            <div class="text-red text-sm flex items-center gap-3">
-                <img src="{{ asset('icons/info.svg') }}" alt="Error" class="w-4 h-4">
-                {{ $message }}
-            </div>
-            @enderror
-        </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="space-y-2">
                 <label for="name" class="block text-sm md:text-base lg:text-lg font-medium">

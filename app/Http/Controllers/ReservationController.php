@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ReservationRequest;
-use App\Mail\ReservationDeclineMail;
 use App\Models\Reservation;
 use App\Models\Table;
 use Illuminate\Http\Request;
@@ -23,8 +22,7 @@ class ReservationController extends Controller
      */
     public function create()
     {
-        $availableTables = Table::where('status', 'available')->get();
-        return view('reservation.create', ['availableTables' => $availableTables]);
+        return view('reservation.create');
     }
 
     /**
@@ -34,24 +32,15 @@ class ReservationController extends Controller
     {
         $validated = $request->validated();
 
-        $table = Table::findOrFail($validated['table_id']);
-        if ($table->status !== 'available') {
-            return back()->withErrors(['table_id' => 'The selected table is no longer available.'])->withInput();
-        }
-
         Reservation::create([
-            'table_id' => $validated['table_id'],
             'name' => $validated['name'],
             'email' => $validated['email'],
             'phone_number' => $validated['phone_number'],
             'reservation_date' => $validated['reservation_date'],
             'comment' => $validated['comment'] ?? null,
-            'status' => 'pending',
         ]);
 
-        $table->update(['status' => 'reserved']);
-
-        return redirect()->route('reservation.create')->with('success', 'Reservation created successfully and is pending confirmation.');
+        return redirect()->route('reservation.pending');
     }
 
     /**
@@ -84,5 +73,10 @@ class ReservationController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function pending()
+    {
+        return view('reservation.pending');
     }
 }

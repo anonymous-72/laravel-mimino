@@ -22,10 +22,13 @@ class ReservationRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'table_id' => 'required|exists:tables,id',
             'name' => 'required|string|max:255',
             'email' => 'required|email',
-            'phone_number' => 'required|string',
+            'phone_number' => [
+                'required',
+                'string',
+                'regex:/^(06|07)[0-9]{7}$/',
+            ],
             'reservation_date' => 'required|date|after:now',
             'comment' => 'string|nullable'
         ];
