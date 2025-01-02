@@ -2,7 +2,7 @@
     <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-6 md:pb-12 lg:pb-18 border-b border-gray-400">
         <img src="{{ asset('logo-light.png') }}" alt="Logo" class="w-20 h-20">
         <ul class="flex flex-col gap-6">
-            <h4 class="font-semibold text-lg md:text-xl lg:text-2xl border-b-2 border-red pb-2 w-fit">{{ __('messages.general-information') }}</h4>
+            <h4 class="font-semibold text-lg md:text-xl lg:text-2xl border-b-2 border-red pb-2 w-full md:w-fit">{{ __('messages.general-information') }}</h4>
             <li class="flex gap-2 items-center text-lg">
                 <img src="{{ asset('icons/phone.svg') }}" alt="Phone" class="w-5 h-5">
                 <a href="tel:+37322897897" class="text-base md:text-lg lg:text-xl link">022 897 897</a>
@@ -17,7 +17,7 @@
             </li>
         </ul>
         <ul class="flex flex-col gap-6">
-            <h4 class="font-semibold text-lg md:text-xl lg:text-2xl border-b-2 border-red pb-2 w-fit">{{ __('messages.social-media') }}</h4>
+            <h4 class="font-semibold text-lg md:text-xl lg:text-2xl border-b-2 border-red pb-2 w-full md:w-fit">{{ __('messages.social-media') }}</h4>
             <li class="flex gap-2 items-center">
                 <img src="{{ asset('icons/instagram.svg') }}" alt="Instagram" class="w-5 h-5">
                 <a href="https://www.instagram.com/miminomd/" target="_blank" class="flex gap-1 items-center link text-base md:text-lg lg:text-xl font-medium">

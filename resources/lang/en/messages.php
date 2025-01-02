@@ -34,4 +34,5 @@ return [
     'reservation-confirmation-contact' => 'If you need to make any changes to your reservation or have any questions, please don\'t hesitate to contact us.',
     'visit-our-website' => 'Visit Our Website',
     'all-rights-reserved' => 'All rights reserved.',
+    'follow-the-link' => 'Follow the Link',
 ];

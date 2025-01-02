@@ -34,5 +34,6 @@ return [
     'reservation-confirmation-contact' => 'Dacă aveți nevoie să modificați rezervarea sau dacă aveți întrebări, vă rugăm să nu ezitați să ne contactați.',
     'visit-our-website' => 'Vizitați site-ul nostru',
     'all-rights-reserved' => 'Toate drepturile rezervate.',
+    'follow-the-link' => 'Urmați link-ul',
 ];
 
