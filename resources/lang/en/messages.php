@@ -8,6 +8,7 @@ return [
     'welcome' => 'Welcome to',
     'welcome-description' => 'The best restaurant of Georgian cuisine in Chișinău',
     'address' => 'Arborilor 21 Street, Shopping MallDova - 4th floor',
+    'address-simple' => 'Shopping MallDova, 4th floor',
     'menu-subtitle' => 'Immerse yourself in the world of Georgian traditions and enjoy the flavors of our menu',
     'about-subtitle' => 'Learn our history and feel the warmth of Georgian hospitality',
     'reservation-subtitle' => 'Book a table and plunge into the atmosphere of Georgian coziness',
@@ -35,4 +36,8 @@ return [
     'visit-our-website' => 'Visit Our Website',
     'all-rights-reserved' => 'All rights reserved.',
     'follow-the-link' => 'Follow the Link',
+    'about-text-first' => '<span class="text-red text-lg md:text-xl lg:text-2xl">Mimino</span> is a cozy corner of Georgian culture in the heart of Chișinău. Our restaurant opened its doors in October 2024 in the popular Shopping Malldova shopping center to introduce you to the authentic flavors of Georgia.',
+    'about-text-second' => 'We are proud of our traditions and strive to give every guest a feeling of warmth and hospitality. <span class="text-red text-lg md:text-xl lg:text-2xl">Mimino</span> is not just a restaurant, it is a place where everyone can enjoy exquisite Georgian cuisine prepared according to family recipes that have been handed down from generation to generation.',
+    'about-text-third' => 'Our restaurant is designed to bring people together - whether it is a family dinner, a meeting with friends or a romantic date. <span class="text-red text-lg md:text-xl lg:text-2xl">Mimino</span> is a place where you are always welcome with a smile and a desire to make your evening unforgettable.',
+    'about-welcome' => 'Come to us and feel the warmth of Georgian hospitality!',
 ];

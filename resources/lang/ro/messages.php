@@ -8,6 +8,7 @@ return [
     'welcome' => 'Bun venit la',
     'welcome-description' => 'Cel mai bun restaurant cu bucătărie georgiană din Chișinău',
     'address' => 'str. Arborilor 21, Shopping MallDova - etajul 4',
+    'address-simple' => 'Shopping MallDova, etajul 4',
     'menu-subtitle' => 'Imersați-vă în lumea tradițiilor georgiene și bucurați-vă de aromele meniului nostru',
     'about-subtitle' => 'Aflați istoria noastră și simțiți căldura ospitalității georgiene',
     'reservation-subtitle' => 'Rezervați o masă și cufundați-vă în atmosfera de confort georgian',
@@ -35,5 +36,9 @@ return [
     'visit-our-website' => 'Vizitați site-ul nostru',
     'all-rights-reserved' => 'Toate drepturile rezervate.',
     'follow-the-link' => 'Urmați link-ul',
+    'about-text-first' => '<span class="text-red text-lg md:text-xl lg:text-2xl">Mimino</span> este un colț confortabil al culturii georgiene în inima Chișinăului. Restaurantul nostru și-a deschis porțile în octombrie 2024 în popularul centru comercial Shopping Malldova pentru a vă prezenta aromele autentice ale Georgiei.',
+    'about-text-second' => 'Suntem mândri de tradițiile noastre și ne străduim să oferim fiecărui oaspete un sentiment de căldură și ospitalitate. <span class="text-red text-lg md:text-xl lg:text-2xl">Mimino</span> nu este doar un restaurant, este un loc unde toată lumea se poate bucura de bucătăria georgiană rafinată, pregătită după rețete de familie care au fost transmise din generație în generație.',
+    'about-text-third' => 'Restaurantul nostru este conceput pentru a aduce oamenii împreună - fie că este vorba de o cină în familie, o întâlnire cu prietenii sau o întâlnire romantică. <span class="text-red text-lg md:text-xl lg:text-2xl">Mimino</span> este un loc în care sunteți întotdeauna bineveniți cu un zâmbet și cu dorința de a vă face seara de neuitat.',
+    'about-welcome' => 'Vino la noi și simte căldura ospitalității georgiene!',
 ];
 

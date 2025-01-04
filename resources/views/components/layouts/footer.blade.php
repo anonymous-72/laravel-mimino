@@ -4,6 +4,10 @@
         <ul class="flex flex-col gap-6">
             <h4 class="font-semibold text-lg md:text-xl lg:text-2xl border-b-2 border-red pb-2 w-full md:w-fit">{{ __('messages.general-information') }}</h4>
             <li class="flex gap-2 items-center text-lg">
+                <img src="{{ asset('icons/location.svg') }}" alt="Location" class="w-5 h-5">
+                <p class="text-base md:text-lg lg:text-xl">{{ __('messages.address-simple') }}</p>
+            </li>
+            <li class="flex gap-2 items-center text-lg">
                 <img src="{{ asset('icons/phone.svg') }}" alt="Phone" class="w-5 h-5">
                 <a href="tel:+37322897897" class="text-base md:text-lg lg:text-xl link">022 897 897</a>
             </li>
