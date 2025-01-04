@@ -3,7 +3,7 @@
         title="{{ __('messages.reservation') }}"
         subtitle="{{ __('messages.reservation-subtitle') }}"
     />
-    <form action="{{ route('reservation.store') }}" method="POST" class="max-w-2xl mx-auto p-6 space-y-10 rounded-xl shadow-lg">
+    <form action="{{ route('reservation.store') }}" method="POST" class="max-w-2xl mx-auto p-6 space-y-4 md:space-y-10 rounded-xl shadow-lg">
         @csrf
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="space-y-2">
